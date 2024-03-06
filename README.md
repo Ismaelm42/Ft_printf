@@ -115,7 +115,7 @@ int	main(void)
 
 The output should look something like this:
 
-```bash
+```sh
 char c = 	a
 char str[] = 	Hello World!
 integer n = 	12345
@@ -123,7 +123,7 @@ decimal n = 	12345
 unsigned u = 	4294954951
 void *ptr = 	0x7fffae04f5ab
 hexa n = 	3039
-HEXA n =	 3039
+HEXA n =	3039
 ```
 
 ## PROGRAMMING LANGUAGE
