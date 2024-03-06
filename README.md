@@ -88,7 +88,7 @@ When compiling your program, be sure to link it to the libftprintf.a library:
 gcc my_program.c libftprintf.a -o my_program
 ```
 
-This is a very simple test that you can use and compare with the original printf function if you are starting this project to test the output of your implementation:
+This is a very simple test that you can use and compare with the original printf function if you are starting this project:
 
 ```c
 #include "ft_printf.h"
