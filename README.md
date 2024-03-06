@@ -6,15 +6,23 @@ This project has been approached with a constant pursuit of efficiency, consolid
 The assignment involves creating a custom function similar to the printf function in the C programming language, with a focus on enhancing skills related to string manipulation, efficient handling of variable arguments, and output formatting within the context of the C language.
 The specified conversions are as follows:
 
-• %c Prints a single character.
-• %s Prints a C string.
-• %p Prints the memory address of a pointer.
-• %d Prints a decimal number (base 10).
-• %i Prints an integer (base 10).
-• %u Prints an unsigned decimal number (base 10).
-• %x Prints a hexadecimal number in lowercase (base 16).
-• %X Prints a hexadecimal number in uppercase (base 16).
-• %% Prints the percentage symbol.
+• **%c** Prints a single character.
+
+• **%s** Prints a C string.
+
+• **%p** Prints the memory address of a pointer.
+
+• **%d** Prints a decimal number (base 10).
+
+• **%i** Prints an integer (base 10).
+
+• **%u** Prints an unsigned decimal number (base 10).
+
+• **%x** Prints a hexadecimal number in lowercase (base 16).
+
+• **%X** Prints a hexadecimal number in uppercase (base 16).
+
+• **%%** Prints the percentage symbol.
 
 ## FUNCTIONS OF THE LIBRARY
 
