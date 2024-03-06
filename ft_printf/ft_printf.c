@@ -1,7 +1,7 @@
 
 #include "ft_printf.h"
 
-void	ft_write(int *length, char *str , int c)
+void	ft_write(int *length, char *str, int c)
 {
 	int	i;
 
