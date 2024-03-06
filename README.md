@@ -102,13 +102,13 @@ int	main(void)
 	void			*ptr = str;
 
 	ft_printf("char c = %c\n", c);
-	ft_printf("char str[] = %s\n", str);
+	ft_printf("char string[] = %s\n", str);
 	ft_printf("integer n = %i\n", n);
 	ft_printf("decimal n = %d\n", n);
 	ft_printf("unsigned u = %u\n", u);
-	ft_printf("void *ptr = %p\n", ptr);
-	ft_printf("hexa n = %x\n", n);
-	ft_printf("HEXA n = %X\n", n);
+	ft_printf("pointer *ptr = %p\n", ptr);
+	ft_printf("hexadecimal n = %x\n", n);
+	ft_printf("HEXADECIMAL n = %X\n", n);
 	return (0);
 }
 ```
@@ -116,14 +116,14 @@ int	main(void)
 The output should look something like this:
 
 ```sh
-char c = 	a
-char str[] = 	Hello World!
-integer n = 	12345
-decimal n = 	12345
-unsigned u = 	4294954951
-void *ptr = 	0x7fffae04f5ab
-hexa n = 	3039
-HEXA n =	3039
+char		c = 		a
+char		string[] = 	Hello World!
+integer		n = 		12345
+decimal 	n = 		12345
+unsigned	u = 		4294954951
+pointer		*ptr = 		0x7fffae04f5ab
+hexadecimal	n = 		3039
+HEXADECIMAL	n =		3039
 ```
 
 ## PROGRAMMING LANGUAGE
