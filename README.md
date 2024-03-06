@@ -95,11 +95,11 @@ This is a very simple test that you can use and compare with the original printf
 
 int	main(void)
 {
-	char			c = 'a';
-	char			str[] = "Hello World!";
-	int				n = 12345;
+	char		c = 'a';
+	char		str[] = "Hello World";
+	int		n = 12345;
 	unsigned int	u = -12345;
-	void			*ptr = str;
+	void		*ptr = str;
 
 	ft_printf("char = %c\n", c);
 	ft_printf("string = %s\n", str);
