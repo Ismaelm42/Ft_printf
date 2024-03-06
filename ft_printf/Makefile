@@ -1,26 +1,32 @@
-NAME = libftprintf
+NAME = libftprintf.a
 
 SRC = ft_printf.c
 
-OBJT = $(SRC:.c=.o)
+OBJT_DIR = .objt/
 
-CC = gcc
+OBJT = $(addprefix $(OBJT_DIR), $(patsubst %.c, %.o, $(SRC)))
 
 CFLAGS = -Wall -Wextra -Werror
 
+AR = ar rcs
+
 RM = rm -f
 
-all:  $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJT)
-	${CC} $(CFLAGS) $(SRC) -o ${NAME}
+	$(AR) $(NAME) $(OBJT)
+
+$(OBJT_DIR)%.o: %.c
+	mkdir -p $(@D)
+	gcc $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJT)
+	$(RM) -r $(OBJT_DIR)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY : all clean fclean re
+.PHONY: all clean fclean re

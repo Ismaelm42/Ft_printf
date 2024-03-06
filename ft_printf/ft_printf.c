@@ -114,13 +114,13 @@ int	ft_printf(char const *str, ...)
 	return (length);
 }
 
-int	main()
-{
-	char str[] = "hola";
-	int	 ret;
+// int	main()
+// {
+// 	char str[] = "hola";
+// 	int	 ret;
 
-	ret = ft_printf("char = %c\nstring = %s\ndecimal = %d\ninteger = %i\npointer = %p\nunsigned = %u\nhexadecimal = %x\nHEXADECIMAL = %X\n", 'a', str, 84846546545645445, 4252, str, 353536335, 42746274274627, 4274627);
-	printf("ret ft_printf = %d\n\n\n", ret);
-	// ret = printf("char = %c\nstring = %s\ndecimal = %d\ninteger = %i\npointer = %p\nunsigned = %u\nhexadecimal = %x\nHEXADECIMAL = %X\n", 'a', str, 15, 4252, str, 353536335, 4274627, 4274627);
-	// printf("ret original printf = %d\n", ret);
-}
+// 	ret = ft_printf("char = %c\nstring = %s\ndecimal = %d\ninteger = %i\npointer = %p\nunsigned = %u\nhexadecimal = %x\nHEXADECIMAL = %X\n", 'a', str, 84846546545645445, 4252, str, 353536335, 42746274274627, 4274627);
+// 	printf("ret ft_printf = %d\n\n\n", ret);
+// 	// ret = printf("char = %c\nstring = %s\ndecimal = %d\ninteger = %i\npointer = %p\nunsigned = %u\nhexadecimal = %x\nHEXADECIMAL = %X\n", 'a', str, 15, 4252, str, 353536335, 4274627, 4274627);
+// 	// printf("ret original printf = %d\n", ret);
+// }
