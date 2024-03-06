@@ -109,20 +109,21 @@ int	main(void)
 	ft_printf("void *ptr = %p\n", ptr);
 	ft_printf("hexa n = %x\n", n);
 	ft_printf("HEXA n = %X\n", n);
+	return (0);
 }
 ```
 
 The output should look something like this:
 
 ```bash
-char c = a
-char str[] = Hello World!
-integer n = 12345
-decimal n = 12345
-unsigned u = 4294954951
-void *ptr = 0x7fffae04f5ab
-hexa n = 3039
-HEXA n = 3039
+char c = 	a
+char str[] = 	Hello World!
+integer n = 	12345
+decimal n = 	12345
+unsigned u = 	4294954951
+void *ptr = 	0x7fffae04f5ab
+hexa n = 	3039
+HEXA n =	 3039
 ```
 
 ## PROGRAMMING LANGUAGE
