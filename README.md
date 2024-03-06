@@ -109,6 +109,7 @@ int	main(void)
 	ft_printf("pointer = %p\n", ptr);
 	ft_printf("hexadecimal = %x\n", n);
 	ft_printf("HEXADECIMAL = %X\n", n);
+	ft_printf("percentage = %%\n");
 	return (0);
 }
 ```
@@ -124,6 +125,7 @@ unsigned = 	4171510507
 pointer	= 	0x7fffae04f5ab
 hexadecimal = 	75bcd15
 HEXADECIMAL =	75BCD15
+percentage = 	%
 ```
 
 ## PROGRAMMING LANGUAGE
