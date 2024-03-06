@@ -26,11 +26,11 @@ The specified conversions are as follows:
 
 ## BRIEF EXPLANATION OF MY FT_PRINTF'S FUNCTIONS
 
-• [ft_write](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L4): This function prints a character or a string to standard output and counts the corresponding number of printed items.
+• [ft_write](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L4): Prints a character or a string to standard output and counts the corresponding number of printed items.
 
-• [ft_convert](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L28): This function performs specific conversions for the formats %d, %i, %p, %u, %x, %X. Depending on the data type associated with the format, it carries out necessary conversions to ensure that the value is handled within the bounds of its type.
+• [ft_convert](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L28): Performs specific conversions for the formats %d, %i, %p, %u, %x, %X. Depending on the data type associated with the format, it carries out necessary conversions to ensure that the value is handled within the bounds of its type.
 
-• [ft_hexabase](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L57): This function converts a number to its hexadecimal or decimal representation, depending on the specified format, and then prints the resulting representation to standard output.
+• [ft_hexabase](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L57): Converts a number to its hexadecimal or decimal representation, depending on the specified format, and then prints the resulting representation to standard output.
 
 • [ft_exec_printf](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L80): Loop that iterates over the format string, printing elements based on detected formats.
 
