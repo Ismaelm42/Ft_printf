@@ -82,7 +82,7 @@ After compiling the library, you can use it in your projects. Make sure that you
 #include "ft_printf.h"
 ```
 
-When compiling your program, be sure to link it to the libft.a library:
+When compiling your program, be sure to link it to the libftprintf.a library:
 
 ```sh
 gcc my_program.c libftprintf.a -o my_program
