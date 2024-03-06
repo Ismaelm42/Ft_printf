@@ -97,8 +97,8 @@ int	main(void)
 {
 	char		c = 'a';
 	char		str[] = "Hello World";
-	int		n = 12345;
-	unsigned int	u = -12345;
+	int		n = 123456789;
+	unsigned int	u = -123456789;
 	void		*ptr = str;
 
 	ft_printf("char = %c\n", c);
@@ -118,12 +118,12 @@ The output should look something like this:
 ```sh
 char = 		a
 string = 	Hello World!
-integer = 	12345
-decimal = 	12345
-unsigned = 	4294954951
+integer = 	123456789
+decimal = 	123456789
+unsigned = 	4171510507
 pointer	= 	0x7fffae04f5ab
-hexadecimal = 	3039
-HEXADECIMAL =	3039
+hexadecimal = 	75bcd15
+HEXADECIMAL =	75BCD15
 ```
 
 ## PROGRAMMING LANGUAGE
