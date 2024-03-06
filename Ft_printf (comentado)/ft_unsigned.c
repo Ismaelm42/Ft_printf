@@ -36,6 +36,6 @@ int	ft_unsigned(void *arg)
 
 	count = 0;
 	len = &count;
-	ft_putnbr_unsigned((int)arg, len);
+	ft_putnbr_unsigned((int)(intptr_t)arg, len);
 	return (*len);
 }

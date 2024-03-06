@@ -47,6 +47,6 @@ int	ft_integer(void *arg)
 
 	count = 0;
 	len = &count;
-	ft_putnbr_integer((int)arg, len);
+	ft_putnbr_integer((int)(intptr_t)arg, len);
 	return (*len);
 }

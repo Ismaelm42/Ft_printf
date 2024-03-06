@@ -18,6 +18,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdarg.h>
+# include <stdint.h>
 # include "Libft/libft.h"
 
 int	ft_printf(char const *str, ...);

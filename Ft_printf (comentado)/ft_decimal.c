@@ -46,6 +46,6 @@ int	ft_decimal(void *arg)
 
 	count = 0;
 	len = &count;
-	ft_putnbr_decimal((int)arg, len);
+	ft_putnbr_decimal((int)(intptr_t)arg, len);
 	return (*len);
 }

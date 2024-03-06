@@ -24,12 +24,6 @@ static void	ft_putnbr_hex(int n, int *len)
 	unsigned int	nbr;
 
 	nbr = n;
-	if (nbr < 0)
-	{
-		write (1, "-", 1);
-		nbr = -nbr;
-		*len = *len + 1;
-	}
 	if (nbr > 15)
 	{
 		ft_putnbr_hex(nbr / 16, len);
@@ -49,6 +43,6 @@ int	ft_lower_case_hex(void	*arg)
 
 	count = 0;
 	len = &count;
-	ft_putnbr_hex((int)arg, len);
+	ft_putnbr_hex((int)(intptr_t)arg, len);
 	return (*len);
 }
