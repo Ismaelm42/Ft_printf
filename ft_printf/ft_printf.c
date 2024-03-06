@@ -25,7 +25,7 @@ void	ft_write(int *length, char *str, int c)
 	}
 }
 
-void	ft_cast(int *length, char *str, void *arg)
+void	ft_convert(int *length, char *str, void *arg)
 {
 	long				nbr;
 	unsigned int		unsigned_nbr;
@@ -90,7 +90,7 @@ void	ft_exec_printf(char const *str, va_list arg, int *length)
 				ft_write(length, va_arg(arg, char *), 0);
 			else if (*str == 'd' || *str == 'i' || *str == 'p'
 				|| *str == 'u' || *str == 'x' || *str == 'X')
-				ft_cast(length, (char *)str, va_arg(arg, void *));
+				ft_convert(length, (char *)str, va_arg(arg, void *));
 			else
 				ft_write(length, NULL, *str);
 		}
