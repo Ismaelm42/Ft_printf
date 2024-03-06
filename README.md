@@ -2,7 +2,7 @@
 
 ## ABOUT THE PROJECT
 
-This project has been approached with a constant pursuit of efficiency, consolidating its implementation into a single file containing five functions. These functions have been meticulously crafted to adhere to the rigorous style standards set by school 42.
+This project has been approached with a constant pursuit of efficiency, consolidating its implementation into **a single file containing five functions**. These functions have been meticulously crafted to adhere to the rigorous style standards set by school 42.
 The assignment involves creating a custom function similar to the printf function in the C programming language, with a focus on enhancing skills related to string manipulation, efficient handling of variable arguments, and output formatting within the context of the C language.
 The specified conversions are as follows:
 
