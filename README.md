@@ -118,7 +118,7 @@ The output should look something like this:
 
 ```sh
 char = 		a
-string = 	Hello World!
+string = 	Hello World
 integer = 	123456789
 decimal = 	123456789
 unsigned = 	4171510507
