@@ -24,7 +24,7 @@ The specified conversions are as follows:
 
 • **%%** Prints the percentage symbol.
 
-## FUNCTIONS OF THE LIBRARY
+## BRIEF EXPLANATION OF FT_PRINTF FUNCTIONS
 
 • [ft_write](https://github.com/Ismaelm42/Ft_printf/blob/main/ft_printf/ft_printf.c#L4): This function prints a character or a string to standard output and counts the corresponding number of printed items.
 
