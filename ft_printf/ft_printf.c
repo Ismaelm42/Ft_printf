@@ -1,16 +1,16 @@
 
 #include "ft_printf.h"
 
-void	ft_write(int *length, char *str, int c)
+void	ft_write(int *length, char *str, char c, bool flag)
 {
 	int	i;
 
-	if (str == NULL && c == 0)
+	if (flag == true && str == NULL)
 	{
 		write(1, "(null)", 6);
 		*length += 6;
 	}
-	else if (str)
+	else if (flag == true)
 	{
 		i = 0;
 		while (str[i] != 0)
@@ -36,7 +36,7 @@ void	ft_convert(int *length, char *str, void *arg)
 		nbr = (int)(intptr_t)arg;
 		if (nbr < 0)
 		{
-			ft_write(length, NULL, '-');
+			ft_write(length, NULL, '-', false);
 			nbr = -nbr;
 		}
 		ft_hexabase(length, str, nbr, "0123456789abcdef");
@@ -49,7 +49,7 @@ void	ft_convert(int *length, char *str, void *arg)
 	else if (*str == 'p')
 	{
 		unsigned_long_nbr = (unsigned long int)arg;
-		ft_write(length, "0x", 0);
+		ft_write(length, "0x", 0, true);
 		ft_hexabase(length, str, unsigned_long_nbr, "0123456789abcdef");
 	}
 }
@@ -73,7 +73,7 @@ void	ft_hexabase(int *length, char *str, unsigned long nbr, char *hexa)
 		c = hexa[nbr];
 		if (*str == 'X' && (c >= 'a' && c <= 'f'))
 			c -= ' ';
-		ft_write(length, NULL, c);
+		ft_write(length, NULL, c, false);
 	}
 }
 
@@ -85,17 +85,17 @@ void	ft_exec_printf(char const *str, va_list arg, int *length)
 		{
 			str++;
 			if (*str == 'c')
-				ft_write(length, NULL, va_arg(arg, int));
+				ft_write(length, NULL, va_arg(arg, int), false);
 			else if (*str == 's')
-				ft_write(length, va_arg(arg, char *), 0);
+				ft_write(length, va_arg(arg, char *), 0, true);
 			else if (*str == 'd' || *str == 'i' || *str == 'p'
 				|| *str == 'u' || *str == 'x' || *str == 'X')
 				ft_convert(length, (char *)str, va_arg(arg, void *));
 			else
-				ft_write(length, NULL, *str);
+				ft_write(length, NULL, *str, false);
 		}
 		else
-			ft_write(length, NULL, *str);
+			ft_write(length, NULL, *str, false);
 		str++;
 	}
 }
@@ -113,14 +113,3 @@ int	ft_printf(char const *str, ...)
 	va_end(arg);
 	return (length);
 }
-
-// int	main()
-// {
-// 	char str[] = "hola";
-// 	int	 ret;
-
-// 	ret = ft_printf("char = %c\nstring = %s\ndecimal = %d\ninteger = %i\npointer = %p\nunsigned = %u\nhexadecimal = %x\nHEXADECIMAL = %X\n", 'a', str, 84846546545645445, 4252, str, 353536335, 42746274274627, 4274627);
-// 	printf("ret ft_printf = %d\n\n\n", ret);
-// 	// ret = printf("char = %c\nstring = %s\ndecimal = %d\ninteger = %i\npointer = %p\nunsigned = %u\nhexadecimal = %x\nHEXADECIMAL = %X\n", 'a', str, 15, 4252, str, 353536335, 4274627, 4274627);
-// 	// printf("ret original printf = %d\n", ret);
-// }
