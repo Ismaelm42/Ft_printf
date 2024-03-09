@@ -25,6 +25,29 @@ void	ft_write(int *length, char *str, char c, bool flag)
 	}
 }
 
+void	ft_hexabase(int *length, char *str, unsigned long nbr, char *hexa)
+{
+	unsigned long	base;
+	char			c;
+
+	if (*str == 'p' || *str == 'x' || *str == 'X')
+		base = 16;
+	else
+		base = 10;
+	if (nbr >= base)
+	{
+		ft_hexabase(length, str, nbr / base, hexa);
+		ft_hexabase(length, str, nbr % base, hexa);
+	}
+	else
+	{
+		c = hexa[nbr];
+		if (*str == 'X' && (c >= 'a' && c <= 'f'))
+			c -= ' ';
+		ft_write(length, NULL, c, false);
+	}
+}
+
 void	ft_convert(int *length, char *str, void *arg)
 {
 	long				nbr;
@@ -51,29 +74,6 @@ void	ft_convert(int *length, char *str, void *arg)
 		unsigned_long_nbr = (unsigned long int)arg;
 		ft_write(length, "0x", 0, true);
 		ft_hexabase(length, str, unsigned_long_nbr, "0123456789abcdef");
-	}
-}
-
-void	ft_hexabase(int *length, char *str, unsigned long nbr, char *hexa)
-{
-	unsigned long	base;
-	char			c;
-
-	if (*str == 'p' || *str == 'x' || *str == 'X')
-		base = 16;
-	else
-		base = 10;
-	if (nbr >= base)
-	{
-		ft_hexabase(length, str, nbr / base, hexa);
-		ft_hexabase(length, str, nbr % base, hexa);
-	}
-	else
-	{
-		c = hexa[nbr];
-		if (*str == 'X' && (c >= 'a' && c <= 'f'))
-			c -= ' ';
-		ft_write(length, NULL, c, false);
 	}
 }
 
