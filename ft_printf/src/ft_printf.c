@@ -1,5 +1,4 @@
-
-#include "ft_printf.h"
+#include "../include/ft_printf.h"
 
 void	ft_write(int *length, char *str, char c, bool flag)
 {

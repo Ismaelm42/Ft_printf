@@ -1,6 +1,7 @@
+
 NAME = libftprintf.a
 
-SRC = ft_printf.c
+SRC =	src/ft_printf.c
 
 OBJT_DIR = .objt/
 
@@ -11,6 +12,8 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
 RM = rm -f
+
+MAKEFLAGS += --quiet
 
 all: $(NAME)
 
